@@ -82,7 +82,7 @@ You&#39;re still friendly with them, but you still wish they found somewhere els
 
 
 [[look away-&gt;The Bar]]
-(set: $friend to true)</tw-passagedata><tw-passagedata pid="4" name="bartender" tags="" position="785,518" size="100,100">It&#39;s quiet for a thursday. They look bored.
+(set: $friend to true)</tw-passagedata><tw-passagedata pid="4" name="bartender" tags="" position="785,518" size="100,100">It&#39;s quiet for a Thursday. They look bored.
 
 [[look away-&gt;The Bar]]
 [[Order a drink]]
@@ -371,8 +371,8 @@ Your [[ex-&gt;ex3]] is yet to come back from the bathroom, their [[friend-&gt;fr
 (if: $drinks &lt;1)[]
 (else-if: $drinks is 2)[You feel a little tipsy. That perfect level of drunk where you feel a slight buzz, but are still perfectly conscious of your surroundings.]
 (else-if: $drinks is 1)[You feel barely tipsy.]
-(else-if: $drinks is 3)[You&#39;re drunk. It feels good.]
-(else-if: $drinks is 4)[You&#39;re drunk. It feels good.]
+(else-if: $drinks is 3)[You&#39;re drunk. It feels good. You might be prone to the occasional slurring of words.]
+(else-if: $drinks is 4)[You&#39;re drunk. It feels good. You might be prone to the occasional slurring of words.]
 (else-if: $drinks is 5)[You might want to (cycling-link: &quot;slow down&quot;, &quot;take it easy&quot;, &quot;stop&quot;, &quot;speed up&quot;) on the drinks.]
 (else-if: $drinks is &gt; 5)[You feel so fucking drunk that you don&#39;t know if you can move.]
 
@@ -468,22 +468,43 @@ You glimpse the:
 
 (set: $notepad to true)
 (set: num-type $time to $time + 1)</tw-passagedata><tw-passagedata pid="48" name="First third" tags="" position="547,2102" size="100,100">* 10pm
-* Close eyes
-* Ente-
+* Don&#39;t make friends
+* Don&#39;t make friends
+* Don&#39;t make friends
+* Don&#39;t make friends
+* Don&#39;t make friends
+* Don&#39;t make friends
+* Don&#39;t make friends
+* Don&#39;t make friends
+* Don&#39;t make friends
+* Don&#39;t make friends
+* Don&#39;t make friends
+* Don&#39;t make friends
 
 The notepad is out of view before you can finish reading.
 
 [[Look away-&gt;AHH]]
 
-</tw-passagedata><tw-passagedata pid="49" name="Middle third" tags="" position="546,2218" size="100,100">* Enter minds
-* Secure form
-* dissm-
+</tw-passagedata><tw-passagedata pid="49" name="Middle third" tags="" position="546,2218" size="100,100">* Don&#39;t make friends
+* Don&#39;t make friends
+* Don&#39;t make friends
+* Don&#39;t make friends
+* Don&#39;t make friends
+* Don&#39;t make friends
+* Don&#39;t make friends
+* Don&#39;t make friends
+* Don&#39;t make friends
+* Don&#39;t make friends
+* Obscure vision
 
 The notepad is out of view before you can finish reading.
 
-[[Look away-&gt;AHH]]</tw-passagedata><tw-passagedata pid="50" name="Last third" tags="" position="538,2332" size="100,100">Dismiss shroud
-Intergrate
-(if: $someoneglad is true)[* Help friendly one] (if: $someonemad is true)[Check on lonely one]
+[[Look away-&gt;AHH]]</tw-passagedata><tw-passagedata pid="50" name="Last third" tags="" position="538,2332" size="100,100">* Don&#39;t make friends
+* Dismiss shroud
+* Don&#39;t make friends
+* Intergrate
+* Don&#39;t make friends
+(if: $someoneglad is true)[* Help friendly one] (if: $someonemad is true)[Check on lonely one](if: $someoneneutral is true)[Decide fate of friendly one]
 
 The last thing on the list is what they must have just written down.
 
@@ -518,12 +539,12 @@ The [[stranger-&gt;stranger4]] is back. You can see their hands slowly shake.
 
 (if: $ex5 is false)[Your [[ex-&gt;ex4]] is back back from the bathroom.](if: $friend5 is false)[Their [[friend-&gt;friend4]] is still playing rock paper scissors with themself.]
 
-[[Leave the bar]]
-
 (if: $time is &gt; 5)[You feel a familiar [[$someone-&gt;someone5]] finger stab you in the flesh between your shoulder and armpit.]
 
+[[Leave the bar]]
+
 (if: $drinks &lt;1)[]
-(else-if: $drinks is 2)[You feel a little tipsy. That perfect level of drunk where you feel a slight buzz, but are still perfectly conscious of your surroundings.](else-if: $drinks is 1)[You feel barely tipsy.](else-if: $drinks is 3)[You&#39;re drunk. It feels good.](else-if: $drinks is 4)[You&#39;re drunk. It feels good.](else-if: $drinks is 5)[You might want to (cycling-link: &quot;slow down&quot;, &quot;take it easy&quot;, &quot;stop&quot;, &quot;speed up&quot;) on the drinks.](else-if: $drinks is &gt; 5)[You feel so fucking drunk that you don&#39;t know if you can move.] (else-if: $drinks is &gt; 8)[[You need to throw-up]]
+(else-if: $drinks is 2)[You feel a little tipsy. That perfect level of drunk where you feel a slight buzz, but are still perfectly conscious of your surroundings.](else-if: $drinks is 1)[You feel barely tipsy.](else-if: $drinks is 3)[You&#39;re drunk. It feels good. You might be prone to the occasional slurring of words.](else-if: $drinks is 4)[You&#39;re drunk. It feels good. You might be prone to the occasional slurring of words.](else-if: $drinks is 5)[You might want to (cycling-link: &quot;slow down&quot;, &quot;take it easy&quot;, &quot;stop&quot;, &quot;speed up&quot;) on the drinks.](else-if: $drinks is &gt; 5)[You feel so fucking drunk that you don&#39;t know if you can move.] (else-if: $drinks is &gt; 8)[[You need to throw-up]]
 
 ]
 
@@ -544,7 +565,7 @@ You haven&#39;t spoken to (if: $exgender is &quot;He looks&quot;)[him](if: $exge
 [[Aproach them-&gt;ex4.5]]
 [[Look away-&gt;bar4]]
 (set: num-type $time to $time + 1)
-(set: $ex5 to true)</tw-passagedata><tw-passagedata pid="57" name="friend4" tags="" position="1127,2749" size="100,100">*Rock*, *rock*, *paper*, *scissors*, *paper*, *scissors*, *scissors*, *scissors*, *paper*, *rock*, *paper*, *rock*
+(set: $ex5 to true)</tw-passagedata><tw-passagedata pid="57" name="friend4" tags="" position="1132,2725" size="100,100">*Rock*, *rock*, *paper*, *scissors*, *paper*, *scissors*, *scissors*, *scissors*, *paper*, *rock*, *paper*, *rock*
 
 On and on and on.
 
@@ -610,9 +631,9 @@ You order (cycling-link: bind $drink3, &quot;a pint&quot;, &quot;the house red&q
 
 
 [[&quot;That&#39;s stoopid.&quot;-&gt;stupid]]
-[[&quot;Why?&quot;-&gt;why]]</tw-passagedata><tw-passagedata pid="69" name="friend4q2" tags="" position="1419,2678" size="100,100">They slowly look up, pausing their game with themselves, smiling at your joke.
+[[&quot;Why?&quot;-&gt;why]]</tw-passagedata><tw-passagedata pid="69" name="friend4q2" tags="" position="1389,2731" size="100,100">They slowly look up, pausing their game with themselves, smiling at your joke.
 
-&quot;Passing the time, it&#39;s almost 10 afterall.&quot;
+&quot;I&#39;m just passing the time, it&#39;s almost 10 afterall.&quot;
 
 [[Why?-&gt;frindwhy]]</tw-passagedata><tw-passagedata pid="70" name=" friend2" tags="" position="618,811" size="100,100">You can&#39;t see exactly what they&#39;re drawing, but they&#39;re very invested in it.
 
@@ -709,7 +730,25 @@ They peel one of their $someonee hands off of the bar and reach for their drink,
 [[&quot;That makes no sense.&quot;]]
 [[&quot;Shut it, nerd.&quot;-&gt;If I were you, I&#39;d keep my hands, and business, to myself.&quot;]]
 
-</tw-passagedata><tw-passagedata pid="85" name="glad4" tags="" position="872,3240" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="86" name="mad4" tags="" position="994,3233" size="100,100">&quot;I&#39;m not sure why I&#39;m wasting my time on (cycling-link: &quot;an insect&quot;,&quot;a worm&quot;, &quot;ant&quot;, &quot;dirt beneath my boot&quot; )</tw-passagedata><tw-passagedata pid="87" name="neut" tags="" position="1144,3233" size="100,100">&quot;Nevermind that now.&quot;</tw-passagedata><tw-passagedata pid="88" name="ex5.5" tags="" position="700,3119" size="100,100">&quot;Want to know what I&#39;ve really been up to?&quot;
+</tw-passagedata><tw-passagedata pid="85" name="glad4" tags="" position="871,3319" size="100,100">&quot;Yes, of course.&quot; They curl their hand into a fist and hold it up at you. &quot;I can&#39;t tell you what&#39;s going on, but remember,&quot; they say, shaking their fist once in your direction.
+
+&quot;Maybe we can be friends if we get out of this.&quot;
+
+[[Sure.-&gt;glad5]]
+[[Absolutely not-&gt;glad5]]
+
+</tw-passagedata><tw-passagedata pid="86" name="mad4" tags="" position="994,3233" size="100,100">&quot;I&#39;m not sure why I&#39;m wasting my time on (cycling-link: &quot;an insect&quot;,&quot;a worm&quot;, &quot;ant&quot;, &quot;the dirt beneath my boot&quot; )
+
+(if: $drinks &lt;3)[[&quot;Maybe cause you&#39;ve got the hots for me&quot;-&gt;mad5]](if: $drinks is 3)[[&quot;Boohoo.&quot;-&gt;mad5]](if: $drinks &gt;3)[[Why am I wayysting my time on a CREEP-&gt;mad5]]</tw-passagedata><tw-passagedata pid="87" name="neut" tags="" position="1170,3285" size="100,100">&quot;Yes, of course.&quot; 
+
+They curl their hand into a fist and hold it up at you. &quot;I can&#39;t tell you what&#39;s going on, but remember,&quot; they say, shaking their fist once in your direction.
+
+&quot;Maybe one day, if you work on your manners, we can be friends if we get out of this.&quot;
+
+[[&quot;Sure.&quot;-&gt;neut5]]
+[[&quot;Absolutely not.&quot;-&gt;neut5]]
+
+</tw-passagedata><tw-passagedata pid="88" name="ex5.5" tags="" position="700,3119" size="100,100">&quot;Want to know what I&#39;ve really been up to?&quot;
 
 [[&quot;No, I&#39;m too busy figuring out what the fuck is going on in this bar&quot;-&gt;bar4]]
 [[&quot;Spit it out, I don&#39;t have time to spare&quot;-&gt;ex6]]
@@ -723,10 +762,10 @@ They peel one of their $someonee hands off of the bar and reach for their drink,
 [[Get over yourself, I&#39;ve got other things to deal with.-&gt;bar4]] (Return to your seat)
 [[Go on.-&gt;ex7]]
 
-(set: num-type $time to $time + 1)</tw-passagedata><tw-passagedata pid="91" name="ex7" tags="" position="707,3441" size="100,100">&quot;All you need to know is, when it&#39;s time, the noise is what does it.&quot;
+(set: num-type $time to $time + 1)</tw-passagedata><tw-passagedata pid="91" name="ex7" tags="" position="700,3446" size="100,100">&quot;All you need to know is, when it&#39;s time, the noise is what does it.&quot;
 
-[[&quot;Great, more useless advice.-&gt;bar4&quot;]]
-[[&quot;Thanks.-&gt;bar4&quot;]]
+[[&quot;Great, more useless advice.-&gt;bar4]]
+[[&quot;Thanks.-&gt;bar4]]
 
 (set: num-type $time to $time + 1)</tw-passagedata><tw-passagedata pid="92" name="Leave the bar" tags="" position="1089,2408" size="100,100">Fuck this, you think, as you get up and leave.
 
@@ -752,11 +791,11 @@ The bartender is watching the football.
 
 Something suggests that it&#39;s going to be a good night.
 
-Compared to how it could go, anyway.</tw-passagedata><tw-passagedata pid="97" name="bar4&quot;" tags="" position="707,3591" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="98" name="You need to throw-up" tags="" position="1765,2487" size="100,100">You throw up, and up, and up. All over the bar, the strangers, your ex, yourself. Like a disgusting waterfountain.
+Compared to how it could go, anyway.</tw-passagedata><tw-passagedata pid="97" name="You need to throw-up" tags="" position="1765,2487" size="100,100">You throw up, and up, and up. All over the bar, the strangers, your ex, yourself. Like a disgusting waterfountain.
 
 You won&#39;t be forgiven.
 
-[[bar5]]</tw-passagedata><tw-passagedata pid="99" name="throat" tags="" position="1657,2633" size="100,100">You feel a vibration in your skull, like a cacophny of insects are trapped inside your very cranium. It gets louder and louder until it is the only noise in the entire world and you know that if it does not stop then you will surely cease to exist here in this bar
+[[bar5]]</tw-passagedata><tw-passagedata pid="98" name="throat" tags="" position="1645,2610" size="100,100">You feel a vibration in your skull, like a cacophny of insects are trapped inside your very cranium. It gets louder and louder until it is the only noise in the entire world and you know that if it does not stop then you will surely cease to exist here in this bar
 
 You must act.
 
@@ -769,7 +808,27 @@ You must act.
 [[Cry-&gt;bar5]]
 (if: $drinks &gt; 4)[[Do a little jig-&gt;bar5]]
 [[Tear at your skin-&gt;bar5]]
-[[Hold your breathe-&gt;bar5]]</tw-passagedata><tw-passagedata pid="100" name="Block your ears" tags="" position="1007,2802" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="101" name="bar5" tags="" position="1657,2783" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[Hold your breathe-&gt;bar5]]</tw-passagedata><tw-passagedata pid="99" name="Block your ears" tags="" position="1007,2802" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="100" name="bar5" tags="" position="1823,2761" size="100,100">It is is (text-colour:red)[late]
+
+You sit at the bar.
+
+The bartender is staring blankly at a static tv screen, drool pooling out of their gaping mouth.
+
+Someone is sitting next to you at the bar, their $someone hand glumly tapping the wood in front of them.
+
+You can see the stranger pacing up and down the length of the bar.
+
+Your ex is missing, so is their friend
+
+The other patrons that make up the bar are completely still.
+
+And so are (text-colour:red)[you].</tw-passagedata><tw-passagedata pid="101" name="glad5" tags="" position="871,3469" size="100,100">Before you can get out your answer you blink, and they dissapear. 
+
+[[Return attention to bar-&gt;bar4]]</tw-passagedata><tw-passagedata pid="102" name="mad5" tags="" position="991,3453" size="100,100">You think of one more witty thing to say, but before you open your mouth to say it, you blink, and they dissapear.
+
+[[Return attention to bar-&gt;bar4]]</tw-passagedata><tw-passagedata pid="103" name="neut5" tags="" position="1170,3435" size="100,100">Before you can get out your answer you blink, and they dissapear. 
+
+[[Return attention to bar-&gt;bar4]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
